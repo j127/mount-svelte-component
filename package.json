@@ -1,0 +1,28 @@
+{
+    "name": "@j127/mount-svelte-component",
+    "version": "1.0.0",
+    "description": "This is an exercise based on [this recipe](https://github.com/lingtalfi/TheBar/blob/master/discussions/inject-svelte-in-existing-app.md).",
+    "main": "index.js",
+    "scripts": {
+        "build": "rollup -c && parcel build src/index.html",
+        "dev": "concurrently \"rollup -c\" \"parcel watch src/index.html\"",
+        "start": "sirv src"
+    },
+    "author": "J. Cohen <hostelmarketing@gmail.com> (https://github.com/j127)",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^12.0.0",
+        "@rollup/plugin-node-resolve": "^8.0.0",
+        "concurrently": "^5.2.0",
+        "node-sass": "^4.14.1",
+        "parcel-bundler": "^1.12.4",
+        "rollup": "^2.10.9",
+        "rollup-plugin-copy": "^3.3.0",
+        "rollup-plugin-livereload": "^1.3.0",
+        "rollup-plugin-svelte": "^5.2.2",
+        "rollup-plugin-terser": "^6.1.0",
+        "sirv-cli": "^0.4.6",
+        "svelte": "^3.23.0",
+        "svelte-preprocess-sass": "^0.2.0"
+    }
+}
